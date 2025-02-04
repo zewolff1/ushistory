@@ -1,0 +1,114 @@
+ <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+
+        /* Banner */
+        .banner {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            position: relative;
+        }
+
+        /* Menu */
+        .menu-container {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+
+        .menu {
+            background: #444;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .submenu {
+            display: none;
+            background: #666;
+            margin-top: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .submenu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 5px 0;
+        }
+
+        .submenu a:hover {
+            background: #555;
+        }
+
+        /* Main Layout */
+        .container {
+            width: 66%;
+            display: flex;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        /* Image Slider */
+        .slider {
+            position: relative;
+            width: 50%;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .slides {
+            display: flex;
+            width: 300%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+
+        /* Text Container */
+        .text-container {
+            width: 50%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
